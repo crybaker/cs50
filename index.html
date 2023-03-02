@@ -3,25 +3,43 @@
     <head>
         <title>Search</title>
     </head>
-    <body>
+
+      <style>
+.button {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+/*.button2 {background-color: #008CBA;}  Blue */
+</style>
+<body>
+
 Here is the regular search
         <form action="https://www.google.com/search" name="form1">
             <input type="text" name="q">
-            <button type="submit" form="form1" value="Submit">Submit</button>
+            <button type="submit" form="form1" class="button button1" value="Google Search">Google Search</button>
 
-            <input type="submit" value="Google Search">
         </form>
         <p>
 Here is the image search
           <form action="https://www.google.com/search">
               <input type="text" name="q">
-              <input type="submit" value="Image Search">
+              <input type="submit"  form="form1" class="button button1" value="Image Search">
           </form>
           <p>
 Here is the advanced search
           <form action="https://www.google.com/search">
               <input type="text" name="q">
-              <input type="submit" value="Advanced Search">
+              <input type="submit"  form="form1" class="button button1" value="Advanced Search">
           </form>
     </body>
 </html>
